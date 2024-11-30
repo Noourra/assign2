@@ -79,6 +79,10 @@
           echo '<td>' . htmlspecialchars($row['semester']) . '</td>';
           echo '<td>' . htmlspecialchars($row['nationality']) . '</td>';
           echo '<td>' . htmlspecialchars($row['colleges']) . '</td>';
+           echo '<td>' . htmlspecialchars($row['number_of_students']) . '</td>';
+          echo '</tr>';
+        }
+        
     ?>
   </body>
   </html>
