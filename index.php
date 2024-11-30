@@ -73,6 +73,8 @@
         echo '<tbody>';
 
         foreach ($result['results'] as $row) {
+          echo '<tr>';
+          echo '<td>' . htmlspecialchars($row['year']) . '</td>';
             
     ?>
   </body>
