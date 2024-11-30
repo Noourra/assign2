@@ -75,7 +75,8 @@
         foreach ($result['results'] as $row) {
           echo '<tr>';
           echo '<td>' . htmlspecialchars($row['year']) . '</td>';
-            
+            echo '<td>' . htmlspecialchars($row['the_programs']) . '</td>';
+          echo '<td>' . htmlspecialchars($row['semester']) . '</td>';
     ?>
   </body>
   </html>
