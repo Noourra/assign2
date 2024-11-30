@@ -73,24 +73,7 @@
         echo '<tbody>';
 
         foreach ($result['results'] as $row) {
-            echo '<tr>';
-            echo '<td>' . htmlspecialchars($row['year']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['semester']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['the_programs']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['nationality']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['colleges']) . '</td>';
-            echo '<td>' . htmlspecialchars($row['number_of_students']) . '</td>';
-            echo '</tr>';
-          }
-  
-          echo '</tbody>';
-          echo '</table>';
-        } else {
-          echo '<p>No data available.</p>';
-        }
-      } catch (Exception $e) {
-        echo '<p>Error: ' . htmlspecialchars($e->getMessage()) . '</p>';
-      }
+            
     ?>
   </body>
   </html>
