@@ -82,7 +82,14 @@
            echo '<td>' . htmlspecialchars($row['number_of_students']) . '</td>';
           echo '</tr>';
         }
-        
+        echo '</tbody>';
+        echo '</table>';
+      }
+      else {
+        echo '<p>No data available.</p>';
+         } catch (Exception $e) {
+      echo '<p>Error: ' . htmlspecialchars($e->getMessage()) . '</p>';
+    }
     ?>
   </body>
   </html>
