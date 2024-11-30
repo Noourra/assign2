@@ -56,3 +56,19 @@
       if ($response === false) {
         throw new Exception("Failed to retrieve data from the API.");
       }
+      $result = json_decode($response, true);
+
+      if ($result['total_count'] > 0) {
+        echo '<table>';
+        echo '<thead>';
+        echo '<tr>';
+        echo '<th>Year</th>';
+        echo '<th>Semester</th>';
+        echo '<th>Programs</th>';
+        echo '<th>Nationality</th>';
+        echo '<th>Colleges</th>';
+        echo '<th>Number of Students</th>';
+        echo '</tr>';
+        echo '</thead>';
+        echo '<tbody>';
+
