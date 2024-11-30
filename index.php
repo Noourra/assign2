@@ -77,6 +77,8 @@
           echo '<td>' . htmlspecialchars($row['year']) . '</td>';
             echo '<td>' . htmlspecialchars($row['the_programs']) . '</td>';
           echo '<td>' . htmlspecialchars($row['semester']) . '</td>';
+          echo '<td>' . htmlspecialchars($row['nationality']) . '</td>';
+          echo '<td>' . htmlspecialchars($row['colleges']) . '</td>';
     ?>
   </body>
   </html>
